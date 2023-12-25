@@ -7,13 +7,34 @@
   </head>
   <body>
     <script>
-      // let count = 0;
-      // const foo = () => {
-      //   console.log(++count);
-      //   foo();
-      // };
+      // The global variable
+      const bookList = [
+        "The Hound of the Baskervilles",
+        "On The Electrodynamics of Moving Bodies",
+        "Philosophiæ Naturalis Principia Mathematica",
+        "Disquisitiones Arithmeticae",
+      ];
 
-      // foo();
+      // Change code below this line
+      function add(bookName) {
+        const newArr = [...bookList, bookName];
+        console.log(newArr);
+        return newArr;
+        // Change code above this line
+      }
+
+      // Change code below this line
+      function remove(bookName) {
+        const newArr = bookList.filter((book) => {
+          debugger;
+          return book !== bookName;
+        });
+        return newArr;
+        // Change code above this line
+      }
+
+      add("fdsfsd")
+      remove("The Hound of the Baskervilles")
     </script>
   </body>
 </html>
