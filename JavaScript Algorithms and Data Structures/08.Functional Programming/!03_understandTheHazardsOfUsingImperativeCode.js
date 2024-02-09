@@ -14,7 +14,7 @@ Window.prototype.tabOpen = function (tab) {
   this.tabs.push("new tab"); // Let's open a new tab for now
   return this;
 };
-
+ 
 // When you close a tab
 Window.prototype.tabClose = function (index) {
   // Only change code below this line
