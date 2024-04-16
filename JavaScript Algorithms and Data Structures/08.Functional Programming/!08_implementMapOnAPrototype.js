@@ -5,5 +5,5 @@ Array.prototype.myMap = function (callback) {
     newArray.push(() => callback(this[i]));
   }
   // Only change code above this line
-  return newArray;  
+  return newArray;   
 };
